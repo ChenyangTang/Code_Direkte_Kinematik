@@ -26,7 +26,7 @@ function rob = berechne_dk_positionen_dh_trafo(rob)
         rob.kl(i).D_0i = rob.kl(i-1).D_0i*rob.kl(i).D_vi;
         end
         % Vektor vom Inertialsystem ins i-te KOS im B0-System (aus homogener Transformationsmatrix)
-        rob.kl(i).B0_r_i= rob.kl(i).D_0i(1:3,4);  
+        rob.kl(i).B0_r_i= rob.kl(i).D_0i(1:3,4);  % so clever!
         
         % Rotationsmatrix vom B0 ins Bi-KOS (aus homogener Transformationsmatrix)
         rob.kl(i).A_i0 =rob.kl(i).D_0i(1:3,1:3)';
