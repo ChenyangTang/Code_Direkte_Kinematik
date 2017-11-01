@@ -36,5 +36,6 @@ function rob = berechne_dk_positionen_dh_trafo(rob)
       robw1 = rob.kl(rob.N_Q).D_0i *[rob.BN_r_N_tcp;1];
       rob.w = robw1(1:3,:);
 %     rob.w =  rob.kl(rob.N_Q).B0_r_i +rob.kl(rob.N_Q).A_i0'*rob.BN_r_N_tcp;
+% tcy
     %% --- ENDE ARBEITSBEREICH --------------------------------------------
 end
